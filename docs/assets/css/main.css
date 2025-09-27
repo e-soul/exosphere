@@ -3142,6 +3142,50 @@ input, select, textarea {
 			background-color: transparent;
 		}
 
+		/* Partner logos (section #three) */
+		/* Ensure consistent item dimensions and centered logos regardless of intrinsic image height */
+		.wrapper.style3 .features li {
+			/* Override generic feature item padding/layout */
+			padding: 1.5em 1em !important;
+			display: flex !important;
+			align-items: center;
+			justify-content: center;
+			height: 200px; /* consistent height */
+			box-sizing: border-box;
+			text-align: center; /* center alignment for any alt text fallback */
+		}
+
+		.wrapper.style3 .features .image.fit {
+			margin: 0; /* remove bottom margin that added extra height */
+			width: 100%;
+			height: 100%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+
+		.wrapper.style3 .features .image.fit img {
+			width: 300px; /* requested logical width */
+			max-width: 100%; /* allow shrinking on very narrow viewports */
+			max-height: 100%;
+			height: auto;
+			object-fit: contain; /* preserve full logo inside box */
+			display: block;
+		}
+
+		@media screen and (max-width: 980px) {
+			.wrapper.style3 .features li {
+				height: 180px;
+			}
+		}
+
+		@media screen and (max-width: 736px) {
+			.wrapper.style3 .features li {
+				height: 160px;
+				padding: 1em 0 !important; /* tighter on small screens */
+			}
+		}
+
 		.wrapper.style5 {
 			background-color: #ffffff;
 			color: #4E4852;
