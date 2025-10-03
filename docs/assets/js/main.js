@@ -12,6 +12,16 @@
 		$banner = $('#banner'),
 		$header = $('#header');
 
+	// Random banner background variant (banner1.jpg, banner2.jpg, banner3.jpg)
+	// Add the corresponding images to docs/images/ with those filenames.
+	(function chooseRandomBanner(){
+		var variants = ['banner1.jpg','banner2.jpg','banner3.jpg'];
+		// 33% distribution each via uniform random pick.
+		var idx = Math.floor(Math.random() * variants.length); // 0..2
+		// Add a class banner-1 / banner-2 / banner-3 to <body> for CSS overrides.
+		$body.addClass('banner-' + (idx + 1));
+	})();
+
 	// Breakpoints.
 		breakpoints({
 			xlarge:   [ '1281px',  '1680px' ],
