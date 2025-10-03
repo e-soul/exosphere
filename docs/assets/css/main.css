@@ -3396,7 +3396,7 @@ input, select, textarea {
 		transition: transform 0.5s ease;
 		-webkit-overflow-scrolling: touch;
 		background: #EBDBC1;
-		color: #ffffff;
+		color: #742740; /* Brand color */
 		height: 100%;
 		max-width: 80%;
 		overflow-y: auto;
