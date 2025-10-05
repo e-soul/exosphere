@@ -4100,7 +4100,7 @@ input, select, textarea {
 		font-size: 0.8em;
 		letter-spacing: 0.05em;
 		line-height: 1.6em;
-		color: #742140; /* custom team description color */
+		color: #742140;
 	}
 
 	@media screen and (max-width: 860px) {
