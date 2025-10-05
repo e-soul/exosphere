@@ -3165,7 +3165,7 @@ input, select, textarea {
 		}
 
 		.wrapper.style3 .features .image.fit img {
-			width: 300px; /* requested logical width */
+			width: clamp(220px, 40vw, 300px);
 			max-width: 100%; /* allow shrinking on very narrow viewports */
 			max-height: 100%;
 			height: auto;
