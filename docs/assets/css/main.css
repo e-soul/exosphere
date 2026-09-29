@@ -4017,6 +4017,9 @@ input, select, textarea {
 
 	@media screen and (min-width: 861px) {
 		.team-grid { grid-template-columns: repeat(3, 1fr); }
+		.team-grid--centered { grid-template-columns: repeat(6, 1fr); }
+		.team-grid--centered .team-card { grid-column: span 2; }
+		.team-grid--centered .team-card:first-child { grid-column: 2 / span 2; }
 	}
 
 	.team-card {
